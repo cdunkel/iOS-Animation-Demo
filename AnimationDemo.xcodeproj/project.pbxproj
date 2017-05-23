@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1264E1E2B1076A76A395CB /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E126CFC3D725F74969E777B /* video.mp4 */; };
+		83B2FE031ECBF84300CA03B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B2FDFF1ECBF7D600CA03B5 /* AVFoundation.framework */; };
 		83F07F841ECBD1DC00AA7287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F07F831ECBD1DC00AA7287 /* main.m */; };
 		83F07F871ECBD1DC00AA7287 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F07F861ECBD1DC00AA7287 /* AppDelegate.m */; };
 		83F07F8A1ECBD1DC00AA7287 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F07F891ECBD1DC00AA7287 /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E126CFC3D725F74969E777B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file.mp4; path = video.mp4; sourceTree = "<group>"; };
+		83B2FDFF1ECBF7D600CA03B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		83B2FE011ECBF80F00CA03B5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		83F07F7F1ECBD1DC00AA7287 /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F07F831ECBD1DC00AA7287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83F07F851ECBD1DC00AA7287 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +38,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B2FE031ECBF84300CA03B5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E126184E5BE9762693C662F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E126CFC3D725F74969E777B /* video.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83B2FDFE1ECBF7D500CA03B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B2FE011ECBF80F00CA03B5 /* AVKit.framework */,
+				83B2FDFF1ECBF7D600CA03B5 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83F07F761ECBD1DC00AA7287 = {
 			isa = PBXGroup;
 			children = (
 				83F07F811ECBD1DC00AA7287 /* AnimationDemo */,
 				83F07F801ECBD1DC00AA7287 /* Products */,
+				83B2FDFE1ECBF7D500CA03B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +91,7 @@
 				83F07F901ECBD1DC00AA7287 /* LaunchScreen.storyboard */,
 				83F07F931ECBD1DC00AA7287 /* Info.plist */,
 				83F07F821ECBD1DC00AA7287 /* Supporting Files */,
+				3E126184E5BE9762693C662F /* Resources */,
 			);
 			path = AnimationDemo;
 			sourceTree = "<group>";
@@ -141,6 +166,7 @@
 				83F07F921ECBD1DC00AA7287 /* LaunchScreen.storyboard in Resources */,
 				83F07F8F1ECBD1DC00AA7287 /* Assets.xcassets in Resources */,
 				83F07F8D1ECBD1DC00AA7287 /* Main.storyboard in Resources */,
+				3E1264E1E2B1076A76A395CB /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +336,7 @@
 				83F07F981ECBD1DC00AA7287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
